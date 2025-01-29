@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="et">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,85 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>Harjutus 06</title>
+    <style>
+        .navbar {
+            background-color: #007bff;
+        }
+        .rounded-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Minu Blogi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Avaleht</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blogi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Blogi</a></li>
+                    <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sinu postitus</li>
+                </ol>
+            </nav>
+
+            <h1>Sinu postitus</h1>
+            <p>Autor: <a href="#" class="text-primary">Stever Heinsaar</a></p>
+            <p><small>29.01.2025</small> <span class="badge bg-danger text-white">CSS</span> <span class="badge bg-warning">bootstrap</span></p>
+
+            <img src="https://images.pexels.com/photos/339119/pexels-photo-339119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Veepiisad" class="rounded-img" style="height: 300px; object-fit: cover;">
+
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime, quaerat assumenda expedita dolorum rem magnam eveniet perferendis sed perspiciatis sapiente consequuntur nihil optio ratione tempora. Fugit perspiciatis nobis aspernatur.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tenetur eaque unde saepe consequatur perferendis. Reiciendis quisquam voluptatem doloremque laborum harum nesciunt, nisi mollitia laudantium. Delectus possimus atque perspiciatis accusamus!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores dolorem, nihil molestiae obcaecati nam inventore, ex, laudantium ut impedit id enim eius atque. Praesentium voluptate autem, explicabo ea expedita itaque.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ex dignissimos ratione hic, accusamus nostrum iure! Dolorum, omnis, amet blanditiis doloremque nobis voluptatibus quasi quaerat neque, adipisci nulla voluptas hic.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores ab officia tempore. Quam ipsa sit voluptates tempora excepturi cupiditate vitae deserunt nemo! Dolorum minima molestiae ipsa, doloribus deleniti facilis.</p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Kategooriad</h5>
+                    <ul class="list-unstyled row">
+                        <li class="col-6"><a href="#">HTML</a></li>
+                        <li class="col-6"><a href="#">JavaScript</a></li>
+                        <li class="col-6"><a href="#">CSS</a></li>
+                        <li class="col-6"><a href="#">PHP</a></li>
+                        <li class="col-6"><a href="#">Bootstrap</a></li>
+                        <li class="col-6"><a href="#">MySQL</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Muu info</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque deleniti quae suscipit, aliquam quam aliquid asperiores, nam vero est veritatis voluptate ea, et eius? Cumque accusamus quas deleniti quisquam dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, perferendis eveniet. Nostrum doloremque quos facilis eligendi est dignissimos animi ipsum impedit aliquid unde, porro amet quae velit molestiae recusandae temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
