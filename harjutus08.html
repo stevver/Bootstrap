@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Harjutus 08</title>
+    <meta name="keywords" content="HTML,CSS,HTML5,CSS3,Bootstrap,bootstrap" />
+    <meta name="author" content="Stever Heinsaar" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body class="container mt-5">
+    <h3>Registreerimine</h3>
+
+    <form class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">Eesnimi*</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Sisesta eesnimi" required>
+                <div class="valid-feedback">Korras</div>
+                <div class="invalid-feedback">Palun täida!</div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Perenimi*</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Sisesta perenimi" required>
+                <div class="valid-feedback">Korras</div>
+                <div class="invalid-feedback">Palun täida!</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="email" placeholder="email@aadress.ee" required>
+            <div class="valid-feedback">Korras</div>
+            <div class="invalid-feedback">Palun sisesta korrektne email!</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Telefon*</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Sisesta telefoninumber" required>
+            <div class="valid-feedback">Korras</div>
+            <div class="invalid-feedback">Palun täida!</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Kirjeldus*</label>
+            <textarea class="form-control" id="description" placeholder="Sisesta lühike kirjeldus" required></textarea>
+            <div class="valid-feedback">Korras</div>
+            <div class="invalid-feedback">Palun täida!</div>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+            <label class="form-check-label" for="privacyCheck">Olen tutvunud ja nõustun <a href="#">privaatsustingimustega</a></label>
+            <div class="valid-feedback">Korras</div>
+            <div class="invalid-feedback">Palun nõustu privaatsustingimustega!</div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Registreeru</button>
+    </form>
+    
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>
