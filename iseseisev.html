@@ -8,8 +8,8 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <meta name="keywords" content="HTML,CSS,HTML5,CSS3,Bootstrap,bootstrap" />
-    <meta name="author" content="Stever Heinsaar" />
+    <meta name="keywords" content="HTML,CSS,HTML5,CSS3,Bootstrap,bootstrap">
+    <meta name="author" content="Stever Heinsaar">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -19,50 +19,53 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-        <div class="row w-100">
-            <div class="col-lg-6 d-flex align-items-center">
-                <a class="navbar-brand" href="iseseisev.html">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Left side: Logo and Hamburger -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand me-2" href="iseseisev.html">
                     <img src="bcgrd.png" alt="Logo" style="height: 30px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <button class="navbar-toggler border-0 order-2" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="iseseisev.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-end align-items-center">
+    
+            <!-- Right side: Social Icons and Button - Fixed Position -->
+            <div class="d-flex align-items-center order-lg-last">
                 <a class="nav-link px-2" href="https://instagram.com" target="_blank">
-                    <i class="fab fa-instagram" style="color: gray;"></i>
+                    <i class="fab fa-instagram text-secondary"></i>
                 </a>
                 <a class="nav-link px-2" href="https://twitter.com" target="_blank">
-                    <i class="fab fa-twitter" style="color: gray;"></i>
+                    <i class="fab fa-twitter text-secondary"></i>
                 </a>
                 <a class="nav-link px-2" href="https://github.com" target="_blank">
-                    <i class="fab fa-github" style="color: gray;"></i>
+                    <i class="fab fa-github text-secondary"></i>
                 </a>
-                <a href="iseseisev.html" class="btn btn-outline-dark px-2 py-1 ml-3">
-                    <i class="button"></i> Button
+                <a href="iseseisev.html" class="btn btn-outline-dark px-2 py-1 ms-3">
+                    Button
                 </a>
             </div>
+    
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse order-3" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="iseseisev.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="text-center bg-white">
         <div class="container">
@@ -106,57 +109,62 @@
 
     <section class="py-5">
         <div class="container">
-            <div class="row mb-5">
-                <div class="d-flex align-items-center" style="gap: 150px;">
-                    <img src="https://images.pexels.com/photos/27514566/pexels-photo-27514566/free-photo-of-harbor-seal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="img-fluid" style="max-width: 52%; border-radius: 3px;">
-                    <div class="flex-grow-1">
-                        <h2>Blocks</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce<br>dapibus, tellus ac cursus commodo, tortor mauris<br>condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <a href="iseseisev.html" class="text-primary">Download</a>
-                    </div>
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/27514566/pexels-photo-27514566/free-photo-of-harbor-seal.jpeg" 
+                         alt="Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Blocks</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <a href="iseseisev.html" class="text-primary">Download</a>
                 </div>
             </div>
-            <div class="row mb-5">
-                <div class="d-flex align-items-center" style="gap: 150px;">
-                    <img src="https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="img-fluid" style="max-width: 52%; border-radius: 3px;">
-                    <div class="flex-grow-1">
-                        <h2>Blocks</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce<br>dapibus, tellus ac cursus commodo, tortor mauris<br>condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <a href="iseseisev.html" class="text-primary">Download</a>
-                    </div>
+    
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg" 
+                         alt="Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Blocks</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <a href="iseseisev.html" class="text-primary">Download</a>
                 </div>
             </div>
         </div>
     </section>
-        <div class="row align-items-start" style="width: 99.9%;">
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Wireframes</h1>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <br>
-                        <h3>Works in every browser:</h3>
-                        <div class="d-flex gap-2">
-                            <img src="https://images.pexels.com/photos/1629777/pexels-photo-1629777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Small image" width="264" height="auto" style="margin-right: 5px; border-radius: 3px;">
-                            <img src="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Small image" width="264" height="auto" style="margin-left: 5px; border-radius: 3px;">
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-end">
-                        <div class="d-flex">
-                            <img src="https://images.pexels.com/photos/2315712/pexels-photo-2315712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Large image" width="560" style="border-radius: 3px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <h1>Wireframes</h1>
-                    <div class="d-flex justify-content-center gap-2">
-                        <img src="https://images.pexels.com/photos/2647053/pexels-photo-2647053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Bottom image" style="width: 368px; height: auto; margin-right: 12px; border-radius: 2px;">
-                        <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Bottom image" style="width: 368px; height: auto; margin-left: 12px; margin-right: 12px; border-radius: 2px;">
-                        <img src="https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Bottom image" style="width: 368px; height: auto; margin-left: 12px; border-radius: 2px;">
-                    </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6 col-sm-12">
+                <h1 class="text-md-start">Wireframes</h1>
+                <p class="text-md-start">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <br>
+                <h3 class="text-md-start">Works in every browser:</h3>
+                <div class="d-flex justify-content-md-start" style="gap: 12px;">
+                    <img src="https://images.pexels.com/photos/1629777/pexels-photo-1629777.jpeg" class="img-fluid" alt="Dog with sunglasses" style="border-radius: 3px; max-width: calc(50% - 6px);">
+                    <img src="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg" class="img-fluid" alt="White cat on chair" style="border-radius: 3px; max-width: calc(50% - 6px);">
                 </div>
             </div>
+    
+            <!-- Right Column -->
+            <div class="col-md-6 col-sm-12 mt-4 mt-md-0">
+                <img src="https://images.pexels.com/photos/2315712/pexels-photo-2315712.jpeg" alt="Horse in leather jacket" class="img-fluid" style="border-radius: 3px; width: 100%;">
+            </div>
         </div>
+    
+        <!-- Bottom Section -->
+        <div class="text-center mt-5">
+            <h1>Wireframes</h1>
+            <div class="d-flex justify-content-between flex-wrap" style="gap: 16px;">
+                <img src="https://images.pexels.com/photos/2647053/pexels-photo-2647053.jpeg" class="img-fluid" alt="Close-up of cow" style="border-radius: 2px; width: 100%; max-width: calc(33.333% - 12px); @media (max-width: 768px) { max-width: 100%; margin-bottom: 16px; }">
+                <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg" class="img-fluid" alt="Happy dog" style="border-radius: 2px; width: 100%; max-width: calc(33.333% - 12px); @media (max-width: 768px) { max-width: 100%; margin-bottom: 16px; }">
+                <img src="https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg" class="img-fluid" alt="Dog with sunglasses" style="border-radius: 2px; width: 100%; max-width: calc(33.333% - 12px); @media (max-width: 768px) { max-width: 100%; margin-bottom: 16px; }">
+            </div>
+        </div>
+    </div>        
 
         <section id="team" class="py-5 text-center bg-light">
             <div class="container">
